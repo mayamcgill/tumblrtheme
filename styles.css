@@ -1,0 +1,15 @@
+.fa-home {
+  color: white;
+}
+
+.navbar {
+  width: 5%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: #6FA09A;
+}
+
+.navbar table {
+  margin: auto;
+}
