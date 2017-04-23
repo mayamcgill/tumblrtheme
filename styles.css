@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(#E6E6E6, #B5FFFF);
+  background: linear-gradient(#279AF1, #23B5D3);
   height: 100%
 }
 
@@ -12,7 +12,7 @@ html {
   height: 100%;
   right: 0;
   top: 0;
-  background-color: #6FA09A;
+  background-color: #070600;
 }
 
 .navbar table {
