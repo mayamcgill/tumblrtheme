@@ -1,5 +1,6 @@
 html {
-  background: linear-gradient(#E6E6E6, #B5FFFF)
+  background: linear-gradient(#E6E6E6, #B5FFFF);
+  height: 100%
 }
 
 .fa-home {
