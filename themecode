@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://use.fontawesome.com/c95d91cde9.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Cuprum|Ranga" rel="stylesheet">
+    <style>
+        html {
+  background: linear-gradient(white, #7EBDC2);
+  height: 100%;
+}
+
+.profilebox {
+  background-color: black;
+  margin-top: 50px;
+  width: 250px;
+  margin-left: 100px;
+  padding: 20px;
+  position: fixed;
+}
+
+.icon {
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Abel', cursive;
+  color: #7EBDC2;
+  font-size: 1em;
+  font-variant: small-caps;
+}
+
+.bio {
+  color: white;
+  font-size: 0.7em;
+  font-family: 'Cuprum', sans-serif;
+  text-align: justify;
+}
+
+.break {
+  text-align: center;
+  color: white;
+}
+
+.fa {
+  color: white;
+}
+
+.navbar {
+  margin: auto;
+}
+
+.navbar td {
+text-align: center;
+}
+
+.navbar p{
+  font-size: 0.6em;
+  color: white;
+  font-family: 'cuprum';
+}
+
+.navbar a{
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.post {
+  width: 45%;
+  background-color: black;
+  padding: 50px;
+  float: right;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+.post p {
+  color: white;
+  font-size: 0.7em;
+  font-family: 'Cuprum', sans-serif;
+  text-align: justify;
+}
+}
+
+    </style>
+  </head>
+
+<body>
+    <div class = "profilebox">
+      <h1>{Title}</h1>
+      <img href="{PortraitURL-64}" class="icon">
+      <p class="bio">{Description}</p>
+      <p class=break>____________<p>
+
+      <iframe src="https://open.spotify.com/embed?uri=spotify:track:2P7CcUSyngLFi0SGnjwQIe" width="250" height="80" frameborder="0" allowtransparency="true"></iframe>
+      <p class=break>____________<p>
+
+      <table class="navbar">
+        <tr>
+          <td>
+            <a href="{BlogURL}">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <p>HOME</p>
+            </a>
+          </td>
+          <td>
+            <a href="{BlogURL}/ask">
+              <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+              <p>MESSAGE</p>
+            </a>
+          </td>
+          <td>
+            <a href="{BlogURL}/archive">
+              <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+              <p>ARCHIVE</p>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="{RSS}">
+              <i class="fa fa-rss" aria-hidden="true"></i>
+              <p>RSS</p>
+            </a>
+          </td>
+          <td>
+            <a href="{BlogURL}/archive">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              <p>SUMBIT</p>
+            </a>
+          </td>
+          <td>
+            <a href="{BlogURL}/random">
+              <i class="fa fa-random" aria-hidden="true"></i>
+              <p>RANDOM</p>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/mayamcgill">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <p>GITHUB</p>
+            </a>
+          </td>
+          <td>
+            <a href="https://open.spotify.com/user/maya_mcgill">
+              <i class="fa fa-spotify" aria-hidden="true"></i>
+              <p>SPOTIFY</p>
+            </a>
+          </td>
+          <td>
+            <a href="https://twitter.com/dorittohoe">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <p>TWITTER</p>
+            </a>
+          </td>
+        </tr>
+
+      </table>
+      <p class=break>____________<p>
+    </div>
+    {block:Index}
+      {block:Posts}
+        {block:Text}
+          <div class="post">
+            {Block:Title}<h1>{Title}</h1>{/Block:Title}
+            <p> {Body}</p>
+          </div>
+        {/block:Text}
+      {Block:Posts}
+    {/block:Index}
+  </body>
+</html>
